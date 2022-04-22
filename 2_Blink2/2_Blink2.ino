@@ -11,7 +11,7 @@ CRGB leds[NUM_LEDS];
 
 void setup() {
   // Uncomment/edit one of the following lines for your leds arrangement.
-  FastLED.addLeds<NEOPIXEL, DATA_PIN, GRB>(leds, NUM_LEDS);  // GRB ordering is assumed
+  FastLED.addLeds<WS2812, DATA_PIN, RGB>(leds, NUM_LEDS); // GRB ordering is assumed
 }
 
 void loop() {

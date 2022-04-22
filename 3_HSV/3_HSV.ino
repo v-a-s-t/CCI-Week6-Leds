@@ -11,7 +11,7 @@ CRGB leds[NUM_LEDS];
 
 void setup() {
   //Tell FastLED which type of addressable LED you are using.
-  FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);  // GRB ordering is assumed
+  FastLED.addLeds<WS2812, DATA_PIN, RGB>(leds, NUM_LEDS); // GRB ordering is assumed
 }
 
 void loop() {
